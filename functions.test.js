@@ -16,4 +16,15 @@ test("Should be null", () => {
   expect(functions.isNull()).toBeNull();
 });
 
+// Falsy value
+test("Should be Falsy", () => {
+  expect(functions.checkValue(0)).toBeFalsy();
+});
 
+// Object test - use toStrictEqual for === instead of toBe which is ==
+test("Check user firstname", () => {
+  expect(functions.createUser()).toStrictEqual({
+    firstName: "Dave",
+    lastName: "Boland"
+  });
+});
