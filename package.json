@@ -19,5 +19,8 @@
   "homepage": "https://github.com/dboland77/jest-practice#readme",
   "devDependencies": {
     "jest": "^27.0.4"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.23"
   }
 }
