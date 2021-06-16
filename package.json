@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch *.js"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "jest": "^27.0.4"
   },
   "dependencies": {
-    "@types/jest": "^26.0.23"
+    "@types/jest": "^26.0.23",
+    "axios": "^0.21.1"
   }
 }
