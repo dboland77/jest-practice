@@ -49,24 +49,24 @@ test("There is no I in team", () => {
 });
 
 //Arrays - use toContain for checking values
-test('Admin should be in usernames', () => {
-  usernames=['john', 'karen', 'admin'];
-  expect(usernames).toContain('admin');
-})
+test("Admin should be in usernames", () => {
+  usernames = ["john", "karen", "admin"];
+  expect(usernames).toContain("admin");
+});
 
 //Working with async data
 // Promise
-test('User fetched name should be Leanne Graham', () => {
+test("User fetched name should be Leanne Graham", () => {
   expect.assertions(1);
-  return functions.fetchUser(1).then(data=> {
-    expect(data.name).toEqual('Leanne Graham')
-  })
-})
+  return functions.fetchUser(1).then((data) => {
+    expect(data.name).toEqual("Leanne Graham");
+  });
+});
 
 // async await instead of Promise
-test('User fetched name should be Ervin Howell', async () => {
+test("User fetched name should be Ervin Howell", async () => {
   expect.assertions(1);
-  const data = await functions.fetchUser(2).then(data=> {
-    expect(data.name).toEqual('Ervin Howell')
-  })
-})
+  const data = await functions.fetchUser(2).then((data) => {
+    expect(data.name).toEqual("Ervin Howell");
+  });
+});
